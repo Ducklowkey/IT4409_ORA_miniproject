@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en"><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js" id="eppiocemhmnlbhjplcgkofciiegomcon"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script><head>
+    <title>IT4409 Công nghệ web và dịch vụ trực tuyến</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    .w3-sidebar {
+      z-index: 3;
+      width: 250px;
+      top: 43px;
+      bottom: 0;
+      height: inherit;
+    }
+    </style>
+    <script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/../executers/vi-tr.js"></script></head>
+    <body __processed_0a470c95-be51-4e29-a4a8-55415097242d__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJMSU5LRURJTiI6ImRpc2FibGVkIiwiQ09ORklHIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjIuMC4xNiIsInNjb3JlIjoyMDAxNn1d">
+    
+    <!-- Navbar -->
+    <div class="w3-top" bis_skin_checked="1">
+      <div class="w3-bar w3-theme w3-top w3-left-align w3-large" bis_skin_checked="1">
+        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        <a href="https://soict.daotao.ai/courses/course-v1:SoICT+IT4409+2022-1/about" class="w3-bar-item w3-button w3-theme-l1">
+            <img src="p/logo.png" alt="Logo" style="height: 25px;">
+        </a>
+        
+        <a href="#monhoc" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin môn học</a>
+        <a href="#congnghe" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Các công nghệ web</a>
+        <a href="#sinhvien" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin sinh viên</a>
+      </div>
+    </div>
+    
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <h4 class="w3-bar-item"><b>Menu</b></h4>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#monhoc">Thông tin môn học</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#congnghe">Các công nghệ web</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#sinhvien">Thông tin sinh viên</a>
+    </nav>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay" bis_skin_checked="1"></div>
+    
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px" bis_skin_checked="1">
+    
+      <div id="monhoc" class="w3-row w3-padding-64" bis_skin_checked="1">
+        <div class="w3-twothird w3-container" bis_skin_checked="1">
+          <h1 class="w3-text-teal">Thông tin môn học</h1>
+          <h2>Công nghệ web và dịch vụ trực tuyến - IT4409</h2>
+          <img src="p/it4409.jpg" alt="Hình ảnh môn học" style="width:100%; height:auto; margin-top: 20px;">
+          <p>Học phần cung cấp các kiến thức cần thiết để xây dựng và phát triển các ứng dụng, dịch vụ trực tuyến trên môi trường web. Sau khi học xong học phần này, sinh viên có khả năng:</p>
+          <p>●Có thể sử dụng một ngôn ngữ lập trình như JSP, PHP để phát triển ứng dụng web cho các lĩnh vực khác nhau như: hệ quản trị nội dung (CMS), cổng thông tin (Portal), hay các ứng dụng điện tử (eCommerce, eLearning, eGoverment,...)</p>
+          <p>●Nắm vững được các công nghệ web, các platform, framework hiện đang thịnh hành.</p>
+          <p>Ngoài ra học phần cũng cung cấp cho sinh viên các kỹ năng làm việc nhóm, thuyết trình và thái độ cần thiết để làm việc và ứng dụng các kỹ thuật trong các dự án, công ty về phần mềm sau này.</p>
+        </div>
+        <div class="w3-third w3-container" bis_skin_checked="1">
+            <figure>
+                <a href="https://winsoft.com.vn/khai-quat-ve-cong-nghe-web.html" target="_blank">
+                    <img src="p/ad2.jpg" alt="Quảng cáo" style="width:100%; height:auto;">
+                </a>
+                <figcaption style="text-align: center; margin-top: 10px;">Khái quát về công nghệ web</figcaption>
+            </figure>
+            <figure>
+                <a href="https://soict.daotao.ai/" target="_blank">
+                    <img src="p/ad3.jpg" alt="Quảng cáo" style="width:100%; height:auto;">
+                </a>
+                <figcaption style="text-align: center; margin-top: 10px;">MOOC daotao.ai</figcaption>
+            </figure>
+        </div>
+      </div>
+    
+      <div id="congnghe" class="w3-row" bis_skin_checked="1">
+        <div  class="w3-twothird w3-container" bis_skin_checked="1">
+          <h1 class="w3-text-teal">Các công nghệ web</h1>
+          <img src="p/congngheweb.jpg" alt="Hình ảnh môn học" style="width:100%; height:auto; margin-top: 20px;">
+          
+          <h2>HTML</h2>
+          <p>HTML là viết tắt của HyperText Markup Language, là một ngôn ngữ đánh dấu cho các tài liệu web. HTML được sử dụng để định nghĩa cấu trúc của một trang web, bao gồm các phần tử như tiêu đề, đoạn văn, hình ảnh, liên kết, v.v. HTML là một ngôn ngữ lập trình web cơ bản và bắt buộc phải học nếu bạn muốn trở thành một lập trình viên web.</p>
+          <h2>CSS</h2>
+          <p>CSS là viết tắt của Cascading Style Sheets, là một ngôn ngữ định dạng cho các tài liệu web. CSS được sử dụng để định dạng bố cục, màu sắc, phông chữ, kích thước, v.v. của các phần tử HTML. CSS là một công nghệ quan trọng giúp cho các trang web trở nên đẹp mắt và chuyên nghiệp hơn.</p>
+          <h2>JAVASCRIPT</h2>
+          <p>JavaScript là một ngôn ngữ lập trình kịch bản được sử dụng để thêm tính tương tác cho các trang web. JavaScript cho phép chúng ta tạo các hiệu ứng động, các trò chơi, các ứng dụng web, v.v. JavaScript là một công nghệ quan trọng giúp cho các trang web trở nên sinh động và hấp dẫn hơn.</p>
+        </div>
+        <div class="w3-third w3-container" bis_skin_checked="1">
+            <figure>
+                <a href="https://atpweb.vn/top-9-cong-nghe-web-ban-phai-biet/" target="_blank">
+                    <img src="p/ad1.jpg" alt="Quảng cáo" style="width:100%; height:auto;">
+                </a>
+                <figcaption style="text-align: center; margin-top: 10px;">Top 9 công nghệ bạn cần biết khi xây dựng web</figcaption>
+            </figure>
+            <figure>
+                <a href="https://atpweb.vn/top-9-cong-nghe-web-ban-phai-biet/" target="_blank">
+                    <img src="p/ad4.png" alt="Quảng cáo" style="width:100%; height:auto;">
+                </a>
+                <figcaption style="text-align: center; margin-top: 10px;">Thiết kế website cần gì?</figcaption>
+            </figure>
+        </div>
+      </div>
+    
+      <div id="sinhvien" class="w3-row w3-padding-64" bis_skin_checked="1">
+        <div class="w3-twothird w3-container" bis_skin_checked="1">
+          <h1 class="w3-text-teal">Thông tin sinh viên</h1>
+          <div class="student-profile">
+          <img src="p\duc.jpg" alt="Ảnh cá nhân" style="width:250px; height:auto; float:left; margin-right: 20px;">
+          <span class="studentinfo">
+          <strong>Họ và tên: </strong>
+          Đàm Trần Ngọc Đức
+          <br><br>
+          <strong>MSSV: </strong>20210208
+          <br><br>
+          <strong>Email: </strong>Duc.dtn210208@sis.hust.edu.vn
+          <br><br>
+          <strong>Sở thích: </strong>Đá bóng, nghe nhạc, chơi game, ...
+          <br><br>
+          <strong>Kinh nghiệm: </strong>Có kinh nghiệm phát triển web bằng HTML, CSS, JavaScript.
+        </span>
+        </div>
+    </div>
+      </div>
+    
+      <!-- Pagination -->
+      <div class="w3-center w3-padding-32" bis_skin_checked="1">
+        <div class="w3-bar" bis_skin_checked="1">
+          <a class="w3-button w3-black" href="#">1</a>
+          
+          <a class="w3-button w3-hover-black" href="#">»</a>
+        </div>
+      </div>
+    
+      <footer id="myFooter" class="w3-container w3-theme-l2 w3-padding-32 footer-fullwidth">
+        
+        <p>
+            <strong>Email:</strong> <a href="mailto:Damduc567@gmail.com" class="w3-hover-opacity">Damduc567@gmail.com</a><br>
+            <strong>Điện thoại:</strong> <a href="tel:0123456789" class="w3-hover-opacity">0123-456-789</a><br>
+            <strong>Địa chỉ:</strong> Số 1 Đại Cồ Việt, Bách Khoa, Hai Bà Trưng, Hà Nội, Việt Nam 
+        </p>
+        
+        <p>
+            © Đại Học Bách Khoa Hà Nội.<br>
+            <a href="#monhoc" class="w3-hover-opacity">Thông tin môn học</a> | 
+            <a href="#congnghe" class="w3-hover-opacity">Các công nghệ web</a> |
+            <a href="#sinhvien" class="w3-hover-opacity">Thông tin sinh viên</a>
+        </p>
+    </footer>
+    
+    
+    
+    <!-- END MAIN -->
+    </div>
+    
+    <script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+    
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+    
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+      }
+    }
+    
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+    </script>
+    
+    
+    </body></html>

@@ -1,0 +1,150 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.w3-top {
+    background-color: #333;
+    color: white;
+}
+
+/* Sidebar */
+.w3-sidebar {
+    background-color: #f4f4f4;
+}
+
+/* Main Content */
+.w3-main {
+    padding: 20px;
+    margin-left: 250px; /* Width of sidebar */
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #00796b; /* Màu sắc cho tiêu đề */
+}
+
+/* Images */
+img {
+    max-width: 100%; /* Đảm bảo hình ảnh responsive */
+    height: auto;
+}
+
+/* Buttons */
+.w3-button {
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer */
+#myFooter {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Kéo dài footer ra ngoài chiều rộng của container */
+.footer-fullwidth {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-left: -50px; /* Điều chỉnh margin nếu cần */
+    margin-right: -50px; /* Điều chỉnh margin nếu cần */
+}
+
+/* Màu sắc tiêu đề nổi bật */
+.footer-title {
+    color: #ffa726; /* Màu sắc khác cho tiêu đề */
+}
+
+/* Footer */
+#myFooter {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Footer Links */
+#myFooter a {
+    color: #ffa726; /* Màu sắc cho liên kết */
+    text-decoration: none; /* Bỏ gạch chân */
+}
+
+#myFooter a:hover {
+    text-decoration: underline; /* Gạch chân khi di chuột qua */
+}
+
+
+.student-info {
+    white-space: nowrap; /* Ngăn chặn xuống dòng */
+}
+
+.student-profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .w3-main {
+        margin-left: 0; /* Khi sidebar ẩn đi */
+    }
+    
+    .w3-sidebar {
+        width: 100%; /* Đổi sang full width khi responsive */
+        height: auto; /* Chiều cao tự động */
+    }
+    
+    .w3-top {
+        position: fixed; /* Để navbar luôn nằm trên cùng */
+        width: 100%;
+        z-index: 1000;
+    }
+    
+    .w3-bar-item {
+        display: block; /* Các mục menu xếp theo hàng dọc */
+    }
+    
+    .w3-button {
+        width: 100%; /* Nút full width trên màn hình nhỏ */
+    }
+    
+    #myFooter {
+        font-size: 14px; /* Giảm kích thước chữ footer */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px; /* Giảm kích thước tiêu đề lớn */
+    }
+    
+    h2 {
+        font-size: 20px; /* Giảm kích thước tiêu đề nhỏ */
+    }
+    
+    footer h4 {
+        font-size: 16px; /* Giảm kích thước tiêu đề footer */
+    }
+    
+    footer p {
+        font-size: 12px; /* Giảm kích thước chữ footer */
+    }
+}
